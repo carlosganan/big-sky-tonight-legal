@@ -56,17 +56,19 @@
 <h2 id="collect">2. What we collect</h2>
 
 <h3>When you sign in</h3>
-<p>Big Sky Live uses Sign in with Apple. When you sign in, Apple shares with us a unique Apple user identifier, an email address (which may be an Apple private relay address if you choose "Hide My Email") and, the first time only, the first name you allow Apple to share. We use the first name only to suggest a display name; you can change it.</p>
+<p>On iPhone, Big Sky Live uses Sign in with Apple. When you sign in, Apple shares with us a unique Apple user identifier, an email address (which may be an Apple private relay address if you choose "Hide My Email") and, the first time only, the first name you allow Apple to share. We use the first name only to suggest a display name; you can change it.</p>
+<p>On Android, Big Sky Live uses Sign in with Google. When you sign in, Google shares with us a unique Google Account identifier, your email address, your name and a link to your Google profile picture. We use your first name only to suggest a display name, which you can change; we do not use or show your Google profile picture.</p>
+<p>If you sign in with Apple and with Google using the same verified email address, both sign-ins open the same Big Sky Live account.</p>
 <p>You can browse the app without signing in. Signing in is required to post, reply, join rides or activities, and use other interactive features.</p>
 
 <h3>Your profile</h3>
 <p>Your display name and the avatar you pick. Both are public.</p>
 
 <h3>Device identifier</h3>
-<p>The app generates a random identifier on your phone the first time it runs. It is not tied to your Apple ID, phone number or any advertising identifier, and it tells us nothing about who you are. We use it to keep your profile and your content together, and to apply rate limits.</p>
+<p>The app generates a random identifier on your phone the first time it runs. It is not tied to your Apple ID, Google Account, phone number or any advertising identifier, and it tells us nothing about who you are. We use it to keep your profile and your content together, and to apply rate limits.</p>
 
 <h3>Age range</h3>
-<p>To comply with children's privacy law, the app asks for your age once. On recent iPhones it first asks Apple's Declared Age Range service, which tells us only an age range that you or your parent have already declared to Apple. If that is not available, the app asks for your date of birth, calculates your age on your phone, and discards the date.</p>
+<p>To comply with children's privacy law, the app asks for your age once. On recent iPhones it first asks Apple's Declared Age Range service, which tells us only an age range that you or your parent have already declared to Apple. If that is not available, and always on Android, the app asks for your date of birth, calculates your age on your phone, and discards the date.</p>
 <div class="box">We store only whether you are an adult (18 or over) or a minor (13 to 17), and how that was determined. We never store or transmit your date of birth. If you are under 13, the app stops before any information leaves your phone.</div>
 
 <h3>Agreements</h3>
@@ -79,10 +81,10 @@
 <p>Reports you make about other people's content, events you mark "Going", threads you follow or mute, and which threads you have read. Reports are visible only to the developer.</p>
 
 <h3>Push notifications</h3>
-<p>If you turn notifications on, we store the push token Apple and Expo assign to your phone so we can deliver notifications. We delete it when you sign out, turn notifications off or delete your account.</p>
+<p>If you turn notifications on, we store the push token assigned to your phone so we can deliver notifications: on iPhone it comes from Apple and Expo, and on Android from Google's Firebase Cloud Messaging and Expo. The token identifies your phone for notifications only. We delete it when you sign out, turn notifications off or delete your account.</p>
 
 <h3>Location</h3>
-<p>If you allow it, the app uses your location on your phone to show where you are on the map. Your location is never sent to us or stored.</p>
+<p>If you allow it, the app uses your location on your phone, only while you are using the map, to show where you are. Your location is never sent to us or stored. On iPhone the map is Apple Maps; on Android it is Google Maps, which receives your phone's requests for map images under Google's own privacy policy.</p>
 
 <h3>Stored only on your phone</h3>
 <p>The people you have blocked, your theme and other settings, and your signed-in session are stored on your phone and are not sent to us.</p>
@@ -109,9 +111,9 @@
 <table>
 <tr><th>Provider</th><th>What it does</th><th>Information involved</th></tr>
 <tr><td>Supabase</td><td>Database, sign-in, photo storage and server functions. Servers in the United States.</td><td>Everything listed in Section 2 that is stored by us.</td></tr>
-<tr><td>Apple</td><td>Sign in with Apple, Declared Age Range, and push notification delivery.</td><td>Apple user identifier, email, first name, age range, push token.</td></tr>
+<tr><td>Apple</td><td>On iPhone: Sign in with Apple, Declared Age Range, push notification delivery, and Apple Maps for the map screen.</td><td>Apple user identifier, email, first name, age range, push token; your phone's requests for map images.</td></tr>
 <tr><td>Expo</td><td>Push notification delivery and app updates.</td><td>Push token.</td></tr>
-<tr><td>Google</td><td>Map tiles for the map screen.</td><td>Your device's requests for map images; no account information.</td></tr>
+<tr><td>Google</td><td>On Android: Sign in with Google, push notification delivery (Firebase Cloud Messaging), and Google Maps for the map screen.</td><td>Google Account identifier, email, name and profile picture link (sign-in); push token; your phone's requests for map images.</td></tr>
 <tr><td>Resend</td><td>Sends an email to the developer when content is reported.</td><td>The report (content type, reason, a snapshot of the reported content). Not your email address.</td></tr>
 <tr><td>SpotOn</td><td>Planned for a future version: menu and ordering information for local restaurants. No personal information is shared with SpotOn by the app today.</td><td>None.</td></tr>
 </table>
@@ -132,11 +134,11 @@
 <li><strong>Your account, profile, Town Board posts and replies:</strong> until you delete them or your account.</li>
 <li><strong>Push tokens:</strong> until you sign out, turn notifications off or delete your account.</li>
 </ul>
-<p>When you delete your account, everything listed in the app's deletion screen is removed, and we ask Apple to disconnect the app from your Apple ID. Reports that other users made about your content may be kept for moderation, together with a short snapshot of the reported content. Technical logs kept by our service providers may hold your account identifier for a limited time, and some content may remain in backups for up to 30 days before it is purged.</p>
+<p>When you delete your account, everything listed in the app's deletion screen is removed, and we ask Apple to disconnect the app from your Apple ID. If you signed in with Google, the app removes its access to your Google Account before your account is deleted. Reports that other users made about your content may be kept for moderation, together with a short snapshot of the reported content. Technical logs kept by our service providers may hold your account identifier for a limited time, and some content may remain in backups for up to 30 days before it is purged.</p>
 
 <h2 id="rights">8. Your choices and rights</h2>
 <ul>
-<li><strong>Delete your account</strong> at any time from Settings → Delete account.</li>
+<li><strong>Delete your account</strong> at any time from Settings → Delete account, or by email without the app. See <a href="./delete-account.html">how to delete your account</a> for the steps and what is deleted.</li>
 <li><strong>Delete individual posts</strong> you have made from the post itself.</li>
 <li><strong>Turn notifications off</strong> in your phone's Settings or in the app.</li>
 <li><strong>Block anyone</strong> from their post or profile.</li>
@@ -145,7 +147,7 @@
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, you also have the right to object to or restrict certain processing, to data portability, and to lodge a complaint with your local data protection authority. Our legal bases are performance of our agreement with you (the Terms of Use), our legitimate interest in running a safe community app, and your consent where we ask for it.</p>
 
 <h2 id="security">9. Security</h2>
-<p>Information is transmitted over encrypted connections and stored with a provider that uses industry-standard security. Access to data is restricted by database rules so that users can only change their own content. We do not store passwords (Sign in with Apple has none), and we never store your date of birth. No system is perfectly secure; if we become aware of a breach affecting your information, we will notify you as required by law.</p>
+<p>Information is transmitted over encrypted connections and stored with a provider that uses industry-standard security. Access to data is restricted by database rules so that users can only change their own content. We do not store passwords (Sign in with Apple and Sign in with Google do not give us one), and we never store your date of birth. No system is perfectly secure; if we become aware of a breach affecting your information, we will notify you as required by law.</p>
 
 <h2 id="changes">10. Changes to this policy</h2>
 <p>We may update this policy. Each version has a version number and date at the top. When a change is material, the app will ask you to review and accept it again. Continued use after a non-material change means you accept the updated policy.</p>
