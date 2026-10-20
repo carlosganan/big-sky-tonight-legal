@@ -31,7 +31,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Big Sky Live · Version 2026-10 · Last updated October 12, 2026</p>
+<p class="meta">Big Sky Live · Version 2026-10 · Last updated October 20, 2026</p>
 
 <p>This policy explains what information Big Sky Live collects, how we use it, and the choices you have. Big Sky Live is operated by Carlos Gañán Álvarez ("we", "us") in Big Sky, Montana. It is a free community app. We do not sell your information, we do not show ads, and we do not track you across other apps or websites.</p>
 
@@ -69,25 +69,29 @@
 
 <h3>Age range</h3>
 <p>To comply with children's privacy law, the app asks for your age once. On recent iPhones it first asks Apple's Declared Age Range service, which tells us only an age range that you or your parent have already declared to Apple. If that is not available, and always on Android, the app asks for your date of birth, calculates your age on your phone, and discards the date.</p>
-<div class="box">We store only whether you are an adult (18 or over) or a minor (13 to 17), and how that was determined. We never store or transmit your date of birth. If you are under 13, the app stops before any information leaves your phone.</div>
+<div class="box">We store only whether you are an adult (18 or over) or a minor (13 to 17), and how that was determined. We never store or transmit your date of birth. If you are under 13, the app stops on your phone; see <a href="#children">Section 6</a>.</div>
 
 <h3>Agreements</h3>
 <p>The version of the Terms of Use you accepted and when, and when you acknowledged the activity risk notice. We keep these so we can show that you agreed.</p>
 
 <h3>Content you post</h3>
-<p>Town Board posts and replies, rides, activities, community events (title, place, date, time and details), Lost &amp; Found items, road reports, photos, and any phone number or contact method you choose to add to a post. All of this is public inside the app. For Housing posts, the optional details you fill in (rent, bedrooms, availability, lease length, pets, furnished).</p>
+<p>Town Board posts and replies, rides, activities, community events (title, place, date, time and details), Lost &amp; Found items, road reports and photos. All of this is public inside the app. For Housing posts, the optional details you fill in (rent, bedrooms, availability, lease length, pets, furnished). The app does not ask for or show phone numbers; talk to other people in the post's thread.</p>
+<p>For activities only, an organizer who is 18 or over may add an Instagram username. It is optional, and it is shown only to the organizer and to people 18 or over who have joined that activity. Users aged 13 to 17 cannot add an Instagram username and never see anyone else's.</p>
 
 <h3>Activity in the app</h3>
 <p>Reports you make about other people's content, events you mark "Going", threads you follow or mute, and which threads you have read. Reports are visible only to the developer.</p>
 
 <h3>Push notifications</h3>
-<p>If you turn notifications on, we store the push token assigned to your phone so we can deliver notifications: on iPhone it comes from Apple and Expo, and on Android from Google's Firebase Cloud Messaging and Expo. The token identifies your phone for notifications only. We delete it when you sign out, turn notifications off or delete your account.</p>
+<p>If you turn notifications on, we store the push token assigned to your phone so we can deliver notifications: on iPhone it comes from Apple and Expo, and on Android from Google's Firebase Cloud Messaging and Expo. The token identifies your phone for notifications only. We delete it when you sign out or delete your account. Notifications say only that there is a new reply in a thread (for example "New reply in Skis for sale"), never the name of the person who wrote it or the text of the message.</p>
 
 <h3>Location</h3>
 <p>If you allow it, the app uses your location on your phone, only while you are using the map, to show where you are. Your location is never sent to us or stored. On iPhone the map is Apple Maps; on Android it is Google Maps, which receives your phone's requests for map images under Google's own privacy policy.</p>
 
+<h3>People you block</h3>
+<p>Your block list is stored on your phone and also on our servers, linked to your profile, so that you do not get notifications about messages from people you have blocked. It is deleted when you unblock someone or delete your account.</p>
+
 <h3>Stored only on your phone</h3>
-<p>The people you have blocked, your theme and other settings, and your signed-in session are stored on your phone and are not sent to us.</p>
+<p>Your theme and other settings, and your signed-in session, are stored on your phone and are not sent to us.</p>
 
 <h3>What we do not collect</h3>
 <p>We do not collect your contacts, your precise location history, your advertising identifier, your payment information, or anything from other apps. We do not use analytics or advertising SDKs.</p>
@@ -104,24 +108,26 @@
 <p>We do not use your information for advertising or sell it to anyone.</p>
 
 <h2 id="public">4. What is public</h2>
-<p>Anyone using the app can see: your display name and avatar, everything you post (including photos and any contact details you add), and your participation in rides and activities. Do not post anything you would not want other people in Big Sky to see.</p>
+<p>Anyone using the app can see: your display name and avatar, everything you post (including photos), and your participation in rides and activities. The Instagram username an organizer adds to an activity is the only exception: only the organizer and people 18 or over who joined that activity can see it. Anyone 18 or over can join an activity, so treat it as visible to other adults in the app. Do not post anything you would not want other people in Big Sky to see, and never share personal details such as your phone number or address.</p>
 
 <h2 id="providers">5. Service providers</h2>
 <p>We use these companies to run the app. Each one processes information only to provide its service to us.</p>
 <table>
 <tr><th>Provider</th><th>What it does</th><th>Information involved</th></tr>
-<tr><td>Supabase</td><td>Database, sign-in, photo storage and server functions. Servers in the United States.</td><td>Everything listed in Section 2 that is stored by us.</td></tr>
+<tr><td>Supabase</td><td>Database, sign-in, photo storage and server functions. Servers in the United States.</td><td>Everything listed in Section 2 that is stored by us, and technical logs that include your IP address.</td></tr>
 <tr><td>Apple</td><td>On iPhone: Sign in with Apple, Declared Age Range, push notification delivery, and Apple Maps for the map screen.</td><td>Apple user identifier, email, first name, age range, push token; your phone's requests for map images.</td></tr>
-<tr><td>Expo</td><td>Push notification delivery and app updates.</td><td>Push token.</td></tr>
+<tr><td>Expo</td><td>Push notification delivery and app updates.</td><td>Push token, the notification text ("New reply in …") and technical logs that include your IP address.</td></tr>
 <tr><td>Google</td><td>On Android: Sign in with Google, push notification delivery (Firebase Cloud Messaging), and Google Maps for the map screen.</td><td>Google Account identifier, email, name and profile picture link (sign-in); push token; your phone's requests for map images.</td></tr>
-<tr><td>Resend</td><td>Sends an email to the developer when content is reported.</td><td>The report (content type, reason, a snapshot of the reported content). Not your email address.</td></tr>
+<tr><td>Resend</td><td>Sends an email to the developer when content is reported.</td><td>The report: content type, reason and the text of the reported content. Never your email address, never your IP address, and never the identifier of the person who made the report.</td></tr>
 <tr><td>SpotOn</td><td>Planned for a future version: menu and ordering information for local restaurants. No personal information is shared with SpotOn by the app today.</td><td>None.</td></tr>
 </table>
+<p><strong>IP addresses.</strong> When the app connects to Supabase (our database) or Expo (push registration and app updates), those companies record your IP address in their technical logs to run and secure their services, and keep it for a limited time. Report emails are sent by our server, not by your phone, so Resend does not receive your IP address. We do not use IP addresses to identify or track you.</p>
 <p>We may also disclose information if required by law, to enforce our Terms, or to protect the safety of users or the public.</p>
 
 <h2 id="children">6. Children and teens</h2>
-<p>Big Sky Live is not for children under 13. The app asks for age before anything else and, if you are under 13, it stops there: no account is created and no information is sent to us. If we learn that we have collected information from a child under 13, we will delete it. If you believe a child under 13 is using the app, email <a href="mailto:atat01036@gmail.com">atat01036@gmail.com</a>.</p>
-<p>Users aged 13 to 17 can use the app with limits: they cannot offer, request or join rides or message in ride conversations, cannot create Housing or Jobs posts, and cannot post community events. They can browse, post in the other Town Board categories, Lost &amp; Found and Activities, reply in public conversations, post road reports and report content. We do not use any engagement-maximizing techniques directed at minors.</p>
+<p>Big Sky Live is not for children under 13. The app asks for age before anything else and asks you to confirm the date you entered. If you are under 13, it stops there: no account is created and nothing is sent to us. The app remembers this only on that phone; deleting and reinstalling the app starts over. If you entered the wrong date, use "Made a mistake? Contact us" on that screen or email <a href="mailto:atat01036@gmail.com">atat01036@gmail.com</a>.</p>
+<p>If a phone that used an earlier version of the app (before accounts existed) declares an age under 13, the app asks us once to remove what was posted from that phone. That content is hidden right away and permanently deleted after 7 days; copies may remain in backups for up to 30 more days. If we learn in any other way that we have collected information from a child under 13, we will delete it. If you believe a child under 13 is using the app, email <a href="mailto:atat01036@gmail.com">atat01036@gmail.com</a>.</p>
+<p>Users aged 13 to 17 can use the app with limits: they cannot offer, request or join rides or message in ride conversations, cannot create Housing or Jobs posts, and cannot post community events. They can browse, post in the other Town Board categories, Lost &amp; Found and Activities, reply in public conversations, post road reports and report content. They cannot add an Instagram username to an activity or see anyone else's. We do not use any engagement-maximizing techniques directed at minors.</p>
 
 <h2 id="retention">7. How long we keep it</h2>
 <ul>
@@ -132,7 +138,10 @@
 <li><strong>Community events:</strong> until the event date has passed, then removed.</li>
 <li><strong>Reports about content:</strong> about 90 days.</li>
 <li><strong>Your account, profile, Town Board posts and replies:</strong> until you delete them or your account.</li>
-<li><strong>Push tokens:</strong> until you sign out, turn notifications off or delete your account.</li>
+<li><strong>Push tokens:</strong> until you sign out or delete your account.</li>
+<li><strong>People you block:</strong> until you unblock them or delete your account.</li>
+<li><strong>Content hidden after an under-13 notice from an earlier version of the app:</strong> 7 days, then permanently deleted.</li>
+<li><strong>Report emails:</strong> in the developer's mailbox until deleted; the copy queued on our servers for sending is removed after 30 days.</li>
 </ul>
 <p>When you delete your account, everything listed in the app's deletion screen is removed, and we ask Apple to disconnect the app from your Apple ID. If you signed in with Google, the app removes its access to your Google Account before your account is deleted. Reports that other users made about your content may be kept for moderation, together with a short snapshot of the reported content. Technical logs kept by our service providers may hold your account identifier for a limited time, and some content may remain in backups for up to 30 days before it is purged.</p>
 
@@ -142,8 +151,9 @@
 <li><strong>Delete individual posts</strong> you have made from the post itself.</li>
 <li><strong>Turn notifications off</strong> in your phone's Settings or in the app.</li>
 <li><strong>Block anyone</strong> from their post or profile.</li>
-<li><strong>Access or correct your information</strong> by emailing <a href="mailto:atat01036@gmail.com">atat01036@gmail.com</a>. We will respond within 30 days.</li>
+<li><strong>Get a copy of your information, or correct or delete it:</strong> email <a href="mailto:atat01036@gmail.com">atat01036@gmail.com</a> (also under Settings → HELP → Contact us in the app). We will respond within 30 days.</li>
 </ul>
+<p>If you do not have an account (for example, you posted with an earlier version of the app, before accounts existed, or you only used "Going" or road reports), you can still ask us to delete your information by email. Tell us what you posted and roughly when, so we can find it; we may ask you for details to confirm it is yours.</p>
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, you also have the right to object to or restrict certain processing, to data portability, and to lodge a complaint with your local data protection authority. Our legal bases are performance of our agreement with you (the Terms of Use), our legitimate interest in running a safe community app, and your consent where we ask for it.</p>
 
 <h2 id="security">9. Security</h2>
